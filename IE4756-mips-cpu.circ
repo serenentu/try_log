@@ -293,7 +293,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(790,270)" to="(790,320)"/>
     <wire from="(680,350)" to="(680,490)"/>
     <wire from="(810,420)" to="(810,430)"/>
-    <wire from="(1010,90)" to="(1010,160)"/>
+    
     <wire from="(600,320)" to="(600,390)"/>
     <wire from="(380,390)" to="(380,400)"/>
     <wire from="(820,190)" to="(820,220)"/>
@@ -904,7 +904,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="7" loc="(760,220)" name="shiftl (32-bit)"/>
     <comp lib="7" loc="(830,280)" name="shiftl (32-bit)"/>
     <comp lib="0" loc="(30,500)" name="Clock"/>
-  </circuit>
+  
+        <comp lib="1" loc="(1010,130)" name="OR Gate"/>
+        <wire from="(1010,130)" to="(1010,160)"/>
+        <wire from="(980,90)" to="(980,120)"/>
+        <wire from="(120,200)" to="(60,200)"/>
+        <wire from="(60,200)" to="(60,10)"/>
+        <wire from="(60,10)" to="(1060,10)"/>
+        <wire from="(1060,10)" to="(1060,140)"/>
+        <wire from="(1060,140)" to="(980,140)"/>
+    
+        <wire from="(1010,90)" to="(980,90)"/></circuit>
   <circuit name="CPU control unit">
     <a name="circuit" val="CPU control unit"/>
     <a name="clabel" val=""/>
@@ -939,7 +949,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(420,340)" to="(470,340)"/>
     <wire from="(240,80)" to="(240,90)"/>
     <wire from="(340,340)" to="(390,340)"/>
-    <wire from="(530,1080)" to="(590,1080)"/>
+    
     <wire from="(270,1130)" to="(390,1130)"/>
     <wire from="(420,800)" to="(590,800)"/>
     <wire from="(170,730)" to="(170,1260)"/>
@@ -1413,6 +1423,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="1" loc="(530,1080)" name="OR Gate">
       <a name="size" val="30"/>
+    <a name="inputs" val="4"/>
     </comp>
     <comp lib="1" loc="(530,570)" name="OR Gate">
       <a name="size" val="30"/>
@@ -1563,7 +1574,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-  </circuit>
+  
+        <comp lib="1" loc="(540,1230)" name="AND Gate">
+            <a name="size" val="30"/>
+        </comp>
+        <comp lib="1" loc="(560,1080)" name="OR Gate"/>
+        <wire from="(530,1080)" to="(530,1070)"/>
+        <wire from="(560,1080)" to="(590,1080)"/>
+        <wire from="(540,1230)" to="(540,1090)"/>
+        <wire from="(540,1090)" to="(530,1090)"/>
+        <wire from="(470,1230)" to="(510,1230)"/>
+        <wire from="(510,1220)" to="(510,1230)"/>
+        <wire from="(250,1260)" to="(250,1280)"/>
+        <wire from="(250,1280)" to="(510,1280)"/>
+        <wire from="(510,1280)" to="(510,1240)"/>
+    </circuit>
   <circuit name="ALU (32-bit)">
     <a name="circuit" val="ALU (32-bit)"/>
     <a name="clabel" val=""/>
@@ -2272,7 +2297,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-  </circuit>
+  
+        <wire from="(220,200)" to="(220,170)"/>
+        <wire from="(220,170)" to="(320,170)"/>
+        <wire from="(190,280)" to="(200,280)"/>
+        <wire from="(190,300)" to="(200,300)"/>
+        <wire from="(230,290)" to="(320,290)"/>
+        <wire from="(320,290)" to="(320,260)"/>
+        <wire from="(190,370)" to="(200,370)"/>
+        <wire from="(190,390)" to="(200,390)"/>
+        <wire from="(230,380)" to="(320,380)"/>
+        <wire from="(320,380)" to="(320,350)"/>
+        <wire from="(380,970)" to="(390,970)"/>
+        <wire from="(380,990)" to="(390,990)"/>
+        <wire from="(270,610)" to="(270,540)"/>
+        <wire from="(270,540)" to="(370,540)"/>
+    </circuit>
   <circuit name="MD (32-bit)">
     <a name="circuit" val="MD (32-bit)"/>
     <a name="clabel" val=""/>
