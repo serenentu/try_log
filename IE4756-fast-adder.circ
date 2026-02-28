@@ -50,7 +50,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
   </lib>
   <lib desc="#Plexers" name="2"/>
-  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Arithmetic" name="3">
+    <tool name="Adder">
+      <a name="width" val="32"/>
+    </tool>
+  </lib>
   <lib desc="#Memory" name="4"/>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
@@ -185,5 +189,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="3" loc="(200,190)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(170,250)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <wire from="(60,100)" to="(60,180)"/>
+    <wire from="(60,180)" to="(160,180)"/>
+    <wire from="(150,100)" to="(170,100)"/>
+    <wire from="(170,100)" to="(170,200)"/>
+    <wire from="(170,200)" to="(160,200)"/>
+    <wire from="(200,190)" to="(260,190)"/>
+    <wire from="(260,190)" to="(260,100)"/>
+    <wire from="(190,270)" to="(190,210)"/>
+    <wire from="(190,210)" to="(180,210)"/>
+    <wire from="(200,210)" to="(240,210)"/>
+    <wire from="(240,210)" to="(240,280)"/>
+    <wire from="(240,280)" to="(150,280)"/>
+    <wire from="(150,280)" to="(150,270)"/>
+    <wire from="(170,250)" to="(170,270)"/>
   </circuit>
 </project>
